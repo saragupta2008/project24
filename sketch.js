@@ -11,7 +11,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1600, 700);
 
 
 	engine = Engine.create();
@@ -19,8 +19,8 @@ function setup() {
 
 	
 	paper = new Paper(100,680,20);
-	dustbin1= new Dustbin(600,680,10,50);
-	 ground = new Ground(600,height,1200,20)
+	dustbin1= new Dustbin(600,680);
+	 ground = new Ground(width/2,670,width,20)
 
 	Engine.run(engine);
   
@@ -34,8 +34,8 @@ function draw() {
   ground.display();
   paper.display();
  dustbin1.display();
-  keyPressed();
-  drawSprites();
+  //keyPressed();
+  //drawSprites();
  
 }
 
